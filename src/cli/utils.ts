@@ -15,9 +15,9 @@ export function getEslintConfigContent(
   additionalConfigs?: string[],
 ): string {
   return `
-import antfu from '@antfu/eslint-config'
+import markterence from '@markterence/eslint-config'
 
-export default antfu({
+export default markterence({
 ${mainConfig}
 }${additionalConfigs?.map(config => `,{\n${config}\n}`)})
 `.trimStart()

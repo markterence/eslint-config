@@ -42,7 +42,7 @@ export async function stylistic(
 
   return [
     {
-      name: 'antfu/stylistic/rules',
+      name: 'markterence/stylistic/rules',
       plugins: {
         antfu: pluginAntfu,
         style: pluginStylistic,

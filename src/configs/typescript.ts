@@ -93,14 +93,14 @@ export async function typescript(
           ...parserOptions as any,
         },
       },
-      name: `antfu/typescript/${typeAware ? 'type-aware-parser' : 'parser'}`,
+      name: `markterence/typescript/${typeAware ? 'type-aware-parser' : 'parser'}`,
     }
   }
 
   return [
     {
       // Install the plugins without globs, so they can be configured separately.
-      name: 'antfu/typescript/setup',
+      name: 'markterence/typescript/setup',
       plugins: {
         antfu: pluginAntfu,
         ts: pluginTs as any,
@@ -117,7 +117,7 @@ export async function typescript(
         ],
     {
       files,
-      name: 'antfu/typescript/rules',
+      name: 'markterence/typescript/rules',
       rules: {
         ...renameRules(
           pluginTs.configs['eslint-recommended'].overrides![0].rules!,
@@ -178,7 +178,7 @@ export async function typescript(
       ? [{
           files: filesTypeAware,
           ignores: ignoresTypeAware,
-          name: 'antfu/typescript/rules-type-aware',
+          name: 'markterence/typescript/rules-type-aware',
           rules: {
             ...typeAwareRules,
             ...overridesTypeAware,

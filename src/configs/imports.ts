@@ -9,7 +9,7 @@ export async function imports(options: OptionsStylistic = {}): Promise<TypedFlat
 
   return [
     {
-      name: 'antfu/imports/rules',
+      name: 'markterence/imports/rules',
       plugins: {
         antfu: pluginAntfu,
         import: pluginImport,

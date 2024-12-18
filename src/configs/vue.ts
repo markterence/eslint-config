@@ -61,7 +61,7 @@ export async function vue(
           watchEffect: 'readonly',
         },
       },
-      name: 'antfu/vue/setup',
+      name: 'markterence/vue/setup',
       plugins: {
         vue: pluginVue,
       },
@@ -81,7 +81,7 @@ export async function vue(
           sourceType: 'module',
         },
       },
-      name: 'antfu/vue/rules',
+      name: 'markterence/vue/rules',
       processor: sfcBlocks === false
         ? pluginVue.processors['.vue']
         : mergeProcessors([

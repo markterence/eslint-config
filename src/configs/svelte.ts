@@ -31,7 +31,7 @@ export async function svelte(
 
   return [
     {
-      name: 'antfu/svelte/setup',
+      name: 'markterence/svelte/setup',
       plugins: {
         svelte: pluginSvelte,
       },
@@ -47,7 +47,7 @@ export async function svelte(
             : null,
         },
       },
-      name: 'antfu/svelte/rules',
+      name: 'markterence/svelte/rules',
       processor: pluginSvelte.processors['.svelte'],
       rules: {
         'import/no-mutable-exports': 'off',

@@ -36,7 +36,7 @@ export async function jsonc(
       languageOptions: {
         parser: parserJsonc,
       },
-      name: 'antfu/jsonc/rules',
+      name: 'markterence/jsonc/rules',
       rules: {
         'jsonc/no-bigint-literals': 'error',
         'jsonc/no-binary-expression': 'error',
